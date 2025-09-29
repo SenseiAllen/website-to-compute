@@ -9,9 +9,9 @@
 
   /* Colors you'll see cascade through the elements */
   --color-bg: #99ddff; /* Used for the page body background */
-  --color-bg-alt: #33b1ff; /* Used for social icons on hover */
-  --color-text-main: #004099; /* List text ann social icons on hover */
-  --color-primary: #006aff; /* Headers and borders */
+  --color-bg-alt: #0895ec; /* Used for social icons on hover */
+  --color-text-main: #0066f5; /* List text ann social icons on hover */
+  --color-primary: #00050c; /* Headers and borders */
   --color-highlight: #e7f7fe; /* Highlights */
 }
 
@@ -27,6 +27,7 @@
 body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
+  background-image: url("T1Background.png");
   text-align: center;
   margin: 0;
   font-size:large;
