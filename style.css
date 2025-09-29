@@ -9,10 +9,10 @@
 
   /* Colors you'll see cascade through the elements */
   --color-bg: #99ddff; /* Used for the page body background */
-  --color-bg-alt: #0895ec; /* Used for social icons on hover */
-  --color-text-main: #0066f5; /* List text ann social icons on hover */
+  --color-bg-alt: #000000; /* Used for social icons on hover */
+  --color-text-main: #000307; /* List text ann social icons on hover */
   --color-primary: #00050c; /* Headers and borders */
-  --color-highlight: #e7f7fe; /* Highlights */
+  --color-highlight: #ff0000; /* Highlights */
 }
 
 /* Basic page style resets */
@@ -131,4 +131,12 @@ a.remix {
 a.remix:hover {
   background: var(--color-primary);
   color:var(--color-highlight);
+}
+a.textBackground {
+  background: var(--color-bg-alt);
+  color:var(--color-highlight);
+  border: 2px solid var(--color-highlight);
+  border-radius: 5px;
+  padding:0.5rem;
+  font-weight:bold;
 }
