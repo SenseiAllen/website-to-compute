@@ -27,7 +27,11 @@
 body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
-  background-image: url("T1Background.png");
+  background-image: url("./public/NewBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
   margin: 0;
   font-size:large;
@@ -47,9 +51,46 @@ body {
   justify-content: center;
 }
 
+.instructions {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20rem auto 0 auto;
+  padding: 0;
+}
+
+p {
+  margin: 1rem;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav li {
+  display: inline;
+}
+
 .illustration {
   max-width:30%;
-  margin:1rem 0 2rem 0;
+  margin:0 0 1rem 0;
   animation: 1s ease-out 0s 1 spinIn;
 }
 @keyframes spinIn {
@@ -78,10 +119,11 @@ body {
 
 /* Typography */
 p {
-  margin: 1rem;
+  margin: 1rem auto;
   line-height: 1.3em;
+  text-align: center;
+  max-width: 800px;
 }
-p,
 h1,
 h2,
 h3,
@@ -93,6 +135,7 @@ h1 {
   display: inline-flex;
   color: var(--color-primary);
   justify-content: center;
+  margin: 0rem auto 0 auto;
 }
 /* Link styles */
 a:link,
@@ -139,4 +182,5 @@ a.textBackground {
   border-radius: 5px;
   padding:0.1rem;
   font-weight:bold;
+  display: inline-block;
 }
